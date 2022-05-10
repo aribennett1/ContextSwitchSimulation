@@ -23,7 +23,7 @@ public class SimProcess {
         } else {
             double r = Math.random();
             if (r < 0.15) {
-                return Main.ProcessState.BLOCKED;
+                return Main.ProcessState.BLOCKED; //blocking randomly 15% of the time, since this is a simualtion this won't block by itself
             }
         }
         return Main.ProcessState.READY;
