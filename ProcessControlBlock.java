@@ -50,6 +50,8 @@ public class ProcessControlBlock {
         if (register == 3) {
             return R3;
         }
-        return R4;
+        else {
+            return R4;
+        }
     }
 }

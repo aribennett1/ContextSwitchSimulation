@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class SimProcessor {
-    Random r = new Random();
+    Random r = new Random(); //using random numbers to represent the values be processed
     private SimProcess currentProcess;
     private int R1, R2, R3, R4, currInstruction;
 

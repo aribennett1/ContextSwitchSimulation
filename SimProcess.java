@@ -12,7 +12,7 @@ public class SimProcess {
         return procName;
     }
 
-    public int getProcessPid() {
+    public int getProcessPid() { //this is never used, but I kept it here if I ever want to expand this simulation
         return pid;
     }
 
@@ -22,8 +22,8 @@ public class SimProcess {
             return Main.ProcessState.FINISHED;
         } else {
             double r = Math.random();
-            if (r < 0.15) {
-                return Main.ProcessState.BLOCKED; //blocking randomly 15% of the time, since this is a simualtion this won't block by itself
+            if (r < 0.15) {  //Randomly set the process to a blocked state 15% of the time, because since this is a simulation, they're not going to block by themselves (as opposed to an actual process)
+                return Main.ProcessState.BLOCKED;
             }
         }
         return Main.ProcessState.READY;
